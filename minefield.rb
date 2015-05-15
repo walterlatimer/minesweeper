@@ -41,11 +41,11 @@ class Minefield
 		when :easy
 			[7, 7, 8]
 		when :medium
-			[12, 12, 20]
+			[10, 12, 20]
 		when :difficult
-			[20, 16, 50]
+			[10, 25, 50]
 		when :custom
-			height = gets_from_range(5, 30,
+			height = gets_from_range(5, 10,
 				prompt: "How tall would you like the board?")
 			width = gets_from_range(5, 30,
 				prompt: "How wide would you like the board?")

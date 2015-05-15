@@ -43,8 +43,6 @@ until loser
 	############ GET COORDINATES ###########
 	loop do
 		game.board.render
-		p flagged_cells
-		p @cells_with_mines
 		game.board.prompt ["Coordinates?","or 'U'ndo selection"]
 		user_coords = gets.chomp.downcase
 
